@@ -7,9 +7,10 @@
              x:Class="shellLogin01.Views.Page1">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Welcome to Xamarin.Forms!!!!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button Text="ok"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

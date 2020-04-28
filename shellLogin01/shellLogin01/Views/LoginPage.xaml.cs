@@ -16,5 +16,14 @@ namespace shellLogin01.Views
         {
             InitializeComponent();
         }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            //await Shell.Current.GoToAsync("//main");
+
+            await Xamarin.Essentials.SecureStorage.SetAsync("isLogged", "1");
+            Application.Current.MainPage = new AppShell();
+            await Shell.Current.GoToAsync("//main");
+        }
     }
 }

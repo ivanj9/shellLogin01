@@ -31,11 +31,11 @@
 
 
     <!-- Your Pages -->
-    <FlyoutItem Title="Page1">
+    <FlyoutItem Title="Page1" Route="page1">
         <ShellContent ContentTemplate="{DataTemplate local:Page1}"/>
     </FlyoutItem>
     
-    <FlyoutItem Title="Main">
+    <FlyoutItem Title="Main" Route="main">
         <Tab Title="Browse" Icon="tab_feed.png">
             <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />
         </Tab>
@@ -44,9 +44,16 @@
         </Tab>
     </FlyoutItem>
 
+    <ShellItem Route="login">
+        <ShellContent ContentTemplate="{DataTemplate local:LoginPage}" />
+    </ShellItem>
+    
+    <!--
     <TabBar>
         <ShellContent ContentTemplate="{DataTemplate local:LoginPage}" />
     </TabBar>
+    
+    -->
 
 
     <!-- Optional Templates 
